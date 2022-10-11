@@ -1,0 +1,211 @@
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  #hero .hero--img img {
+    width: 815px;
+  }
+}
+@media (max-width: 1024px) {
+  .hamburger-menu {
+    display: none;
+    z-index: 9999;
+  }
+  #header .header--general .header--general__navbar a {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  #header .header--general .header--general__tabs button {
+    font-size: 14px;
+    width: 90px;
+    height: 30px;
+  }
+  #hero .hero--title h2 {
+    font-size: 40px;
+  }
+  #hero .hero--title p {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+  #hero .hero--img .hero--block {
+    width: 400px;
+    height: 420px;
+  }
+  #hero .hero--img .hero--block h1 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  #hero .hero--img .hero--block .hero--block__select {
+    padding-top: 13px;
+  }
+  #hero .hero--img .hero--block .hero--block__select h2 {
+    font-size: 14px;
+    top: 20%;
+    left: 8%;
+  }
+  #hero .hero--img .hero--block .hero--block__select h3 {
+    font-size: 14px;
+    top: 42%;
+    left: 8%;
+  }
+  #hero .hero--img .hero--block .hero--block__select h4 {
+    font-size: 14px;
+    top: 63%;
+    left: 8%;
+  }
+  #hero .hero--img img {
+    width: 640px;
+    height: 460px;
+  }
+  #space .space--title p {
+    font-size: 16px;
+  }
+  #space .space--title .space--title__icon .left {
+    padding-right: 10px;
+  }
+  #space .space--title .space--title__icon .left svg {
+    width: 50px;
+    height: 20px;
+  }
+  #space .space--title .space--title__icon svg {
+    width: 80px;
+    height: 20px;
+  }
+  #space .space--general .image img {
+    width: 290px;
+    height: 410px;
+  }
+  #space .space--general .image button {
+    width: 65px;
+    height: 65px;
+  }
+  #space .space--general .block {
+    width: 300px;
+    height: 460px;
+  }
+  #space .space--general .block img {
+    width: 80px;
+    padding: 15px 205px;
+  }
+  #revolut .revolut--group1 {
+    padding-left: 10px;
+  }
+  #revolut .revolut--group1 .icon--title {
+    padding-left: 15px;
+  }
+  #revolut .revolut--group1 .icon--title h1 {
+    font-size: 28px;
+  }
+  #revolut .revolut--right__block {
+    width: 430px;
+    height: 400px;
+  }
+  #revolut .revolut--right__block h2 {
+    font-size: 35px;
+  }
+  #revolut .revolut--right__block p {
+    font-size: 18px;
+  }
+  #all .all--general__tabs img {
+    width: 550px;
+    height: 420px;
+  }
+  #immer {
+    margin-left: -300px;
+  }
+  #immer .swiper-horizontal .swiper-pagination-bullets,
+#immer .swiper-horizontal .swiper-pagination-bullets,
+#immer .swiper-horizontal .swiper-pagination-horizontal,
+#immer .swiper-horizontal .swiper-pagination-custom,
+#immer .swiper-horizontal .swiper-pagination-fraction {
+    left: 150px;
+  }
+  #who {
+    padding: 20px 0;
+  }
+  #who .who h1 {
+    font-size: 35px;
+  }
+  #who .who--images img {
+    width: 120px;
+  }
+  #find h1 {
+    font-size: 35px;
+  }
+  #find .find--block {
+    width: 280px;
+    height: 160px;
+  }
+  #find .find--block h2 {
+    font-size: 22px;
+  }
+  #find .find--block__square {
+    margin-left: 118px;
+  }
+  #news .news--title h1 {
+    font-size: 35px;
+  }
+  #news .news--general {
+    display: flex;
+    justify-content: space-around;
+  }
+  #news .news--general__block {
+    padding: 0 10px;
+  }
+  #footer .footer--title p {
+    font-size: 14px;
+  }
+  #footer .footer--title__icon {
+    font-size: 20px;
+  }
+  #footer .footer--general__group {
+    padding-left: 40px;
+  }
+  #footer .footer--general__group p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  #hero .hero--img img {
+    width: 620px;
+    height: 460px;
+  }
+  #space .space--general .image img {
+    width: 260px;
+    height: 350px;
+  }
+  #space .space--general .image button {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 8px;
+  }
+  #space .space--general .block {
+    width: 280px;
+    height: 420px;
+  }
+  #space .space--general .block img {
+    width: 80px;
+    padding: 15px 180px;
+  }
+  #space .space--general .block h1 {
+    font-size: 28px;
+  }
+  #space .space--general .block span {
+    font-size: 16px;
+  }
+  #space .space--general .block button {
+    width: 235px;
+    height: 62px;
+    margin-top: 73px;
+  }
+  #immer .immer {
+    margin-left: -20px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
