@@ -10,6 +10,31 @@
   #hero .hero--img img {
     width: 815px;
   }
+  #news .news--general img {
+    width: 330px;
+  }
+  #news .news--general__img {
+    width: 680px;
+  }
+  #news .news--general__img--block {
+    padding-right: 25px;
+  }
+  #news .news--general__img--block .sundar {
+    width: 60px;
+    height: 60px;
+  }
+  #news .news--general__group {
+    width: 330px;
+  }
+  #footer .footer {
+    justify-content: space-between;
+  }
+  #footer .footer--general__group p {
+    font-size: 14px;
+  }
+  #footer .footer--general__group a {
+    font-size: 14px;
+  }
 }
 @media (max-width: 1024px) {
   .hamburger-menu {
@@ -68,16 +93,8 @@
   #space .space--title .space--title__icon .left {
     padding-right: 10px;
   }
-  #space .space--title .space--title__icon .left svg {
-    width: 50px;
-    height: 20px;
-  }
-  #space .space--title .space--title__icon svg {
-    width: 80px;
-    height: 20px;
-  }
   #space .space--general .image img {
-    width: 290px;
+    width: 330px;
     height: 410px;
   }
   #space .space--general .image button {
@@ -151,11 +168,10 @@
     font-size: 35px;
   }
   #news .news--general {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
-  #news .news--general__block {
-    padding: 0 10px;
+  #footer .footer {
+    justify-content: space-between;
   }
   #footer .footer--title p {
     font-size: 14px;
@@ -169,6 +185,9 @@
   #footer .footer--general__group p {
     font-size: 14px;
   }
+  #footer .footer--general__group a {
+    font-size: 14px;
+  }
 }
 @media (max-width: 992px) {
   #hero .hero--img img {
@@ -176,13 +195,12 @@
     height: 460px;
   }
   #space .space--general .image img {
-    width: 260px;
-    height: 350px;
+    width: 330px;
+    height: 390px;
   }
   #space .space--general .image button {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 8px;
+    width: 30px;
+    height: 30px;
   }
   #space .space--general .block {
     width: 280px;
@@ -205,6 +223,239 @@
   }
   #immer .immer {
     margin-left: -20px;
+  }
+  #footer .footer {
+    justify-content: space-between;
+  }
+  #footer .footer--general__group h2 {
+    font-size: 18px;
+  }
+  #footer .footer--general__group p {
+    font-size: 13px;
+  }
+  #footer .footer--general__group a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  #header .header--general h1 {
+    font-size: 28px;
+  }
+  #header .header--general__navbar {
+    display: none;
+  }
+  #header .header--general__tabs {
+    display: none;
+  }
+  #header .hamburger-menu {
+    display: block;
+    z-index: 9999;
+  }
+  #hero .hero--title h2 {
+    width: 60%;
+    font-size: 35px;
+    line-height: 60px;
+  }
+  #hero .hero--title h2 br {
+    display: none;
+  }
+  #hero .hero--title p {
+    width: 35%;
+    font-size: 15px;
+  }
+  #hero .hero--title p br {
+    display: none;
+  }
+  #hero .hero--img {
+    padding: 20px 0 400px 0;
+    flex-direction: column;
+  }
+  #hero .hero--img img {
+    top: 440px;
+    left: 0;
+    width: 750px;
+    height: 400px;
+  }
+  #space .space--title h1 {
+    font-size: 25px;
+  }
+  #space .space--title p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #space .space--title__icon .left {
+    margin-right: 5px;
+  }
+  #space .space--title__icon .left svg {
+    width: 30px;
+    height: 15px;
+  }
+  #space .space--title__icon svg {
+    width: 50px;
+    height: 15px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide {
+    width: 250px;
+    height: 390px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .image img {
+    width: 250px;
+    height: 320px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .image button {
+    width: 50px;
+    height: 50px;
+    bottom: 61px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .image h2 {
+    font-size: 18px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .block {
+    width: 250px;
+    height: 380px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .block img {
+    width: 60px;
+    padding: 15px 175px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .block h1 {
+    font-size: 20px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .block span {
+    font-size: 15px;
+  }
+  #space .space--general .swiper-wrapper .swiper-slide .block button {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 73px;
+  }
+  #revolut .revolut {
+    flex-direction: column;
+  }
+  #revolut .revolut--left {
+    padding-left: 70px;
+  }
+  #revolut .revolut--right {
+    padding-left: 130px;
+  }
+  #all h2 {
+    font-size: 35px;
+  }
+  #all .all--general__label label {
+    font-size: 18px;
+  }
+  #all .all--general__label label:hover {
+    width: 220px;
+    height: 10px;
+  }
+  #all .all--general__tabs img {
+    padding-top: 70px;
+    width: 350px;
+    height: 280px;
+  }
+  #immer .immer {
+    padding-left: 550px;
+  }
+  #immer .immer h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  #who .who h1 {
+    font-size: 35px;
+  }
+  #who .who p {
+    font-size: 16px;
+  }
+  #who .who--images {
+    flex-wrap: wrap;
+    width: 80%;
+    padding-left: 65px;
+  }
+  #who .who--images img {
+    height: 50px;
+    width: 120px;
+    padding: 10px 30px;
+  }
+  #what .what h2 {
+    font-size: 35px;
+  }
+  #what .what--icon svg {
+    width: 50px;
+    height: 30px;
+  }
+  #what .what--icon .icons {
+    width: 85px;
+    height: 30px;
+  }
+  #what .swiper {
+    width: 90%;
+    margin: 0 30px;
+  }
+  #find h1 {
+    font-size: 35px;
+  }
+  #find .find--block {
+    width: 220px;
+    height: 130px;
+  }
+  #find .find--block h2 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  #find .find--block__square {
+    margin: 10px 80px;
+    width: 50px;
+    height: 30px;
+    font-size: 13px;
+  }
+  #news .news--title h1 {
+    font-size: 34px;
+  }
+  #ready .ready--left .title h1 {
+    font-size: 16px;
+  }
+  #ready .ready--left .title hr {
+    width: 60px;
+  }
+  #ready .ready--left h2 {
+    font-size: 30px;
+  }
+  #ready .ready--left p {
+    font-size: 18px;
+  }
+  #ready .ready--left button {
+    padding: 15px 80px;
+  }
+  #ready .ready--right .right {
+    width: 220px;
+    height: 280px;
+  }
+  #ready .ready--right .boy {
+    width: 240px;
+    height: 290px;
+    bottom: 20px;
+  }
+  #footer .footer {
+    flex-wrap: wrap;
+  }
+  #footer .footer--title {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .footer--title p br {
+    display: none;
+  }
+  #footer .footer--title p {
+    width: 75%;
+  }
+  #footer .footer--general {
+    padding: 50px 30px;
+  }
+  #footer .footer--general__group p {
+    line-height: 15px;
   }
 }
 

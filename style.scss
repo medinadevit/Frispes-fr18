@@ -16,7 +16,11 @@ a {
 
 
 #header {
-  padding: 10px 0;
+  padding: 20px 0;
+  background: rgba(239, 236, 236, 0.53);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   animation: ani .6s alternate;
 
   @keyframes ani {
@@ -83,7 +87,7 @@ a {
 }
 
 #hero {
-  padding: 50px 0;
+  padding-top: 130px;
 
   .hero--general {
     display: flex;
@@ -230,6 +234,8 @@ a {
 }
 
 #space {
+  padding: 60px 0;
+
   .space--title {
     padding: 50px 0;
     display: flex;
@@ -261,81 +267,95 @@ a {
   }
 
   .space--general {
-    display: flex;
-    justify-content: space-between;
 
-    .image {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-
-      button {
-        position: absolute;
-        bottom: 63px;
-        width: 72px;
-        height: 72px;
-        color: white;
-        font-size: 15px;
-        background: #FF5722;
-        border: none;
-      }
-
-      h2 {
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        text-align: center;
-        color: #222831;
-        padding: 20px 0;
-      }
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
-    .block {
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
       width: 340px;
       height: 470px;
-      background: #10375C;
-      display: flex;
-      flex-direction: column;
 
-      img {
-        width: 100px;
-        padding: 15px 225px;
-        margin-bottom: 30px;
+      .image {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        button {
+          position: absolute;
+          bottom: 63px;
+          width: 72px;
+          height: 72px;
+          color: white;
+          font-size: 15px;
+          background: #FF5722;
+          border: none;
+        }
+
+        h2 {
+          font-family: 'Lato', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          text-align: center;
+          color: #222831;
+          padding: 20px 0;
+        }
       }
 
-      h1 {
-        font-family: 'Lora', sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 15px 0;
+      .block {
+        width: 340px;
+        height: 470px;
+        background: #10375C;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 100px;
+          padding: 15px 225px;
+          margin-bottom: 30px;
+        }
+
+        h1 {
+          font-family: 'Lora', sans-serif;
+          font-weight: 400;
+          font-size: 32px;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 15px 0;
+        }
+
+        span {
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+
+        button {
+          font-family: 'Lato', sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          text-align: center;
+          color: #FFFFFF;
+
+          width: 255px;
+          height: 72px;
+          border: none;
+          background: #FF5722;
+          margin-top: 100px;
+        }
       }
 
-      span {
-        font-family: 'Lato', sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        text-align: center;
-        color: #FFFFFF;
-      }
-
-      button {
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        text-align: center;
-        color: #FFFFFF;
-
-        width: 255px;
-        height: 72px;
-        border: none;
-        background: #FF5722;
-        margin-top: 100px;
-      }
     }
 
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -346,32 +366,37 @@ a {
     display: flex;
     justify-content: space-between;
 
-    &--group1 {
-      padding-left: 20px;
+    &--left {
+      display: flex;
 
-      .icon {
-        display: flex;
-        padding: 40px 0;
+      &__group1 {
+        padding: 0 60px;
 
-        &--title {
-          padding-left: 20px;
+        .icon {
+          display: flex;
+          padding: 40px 0;
 
-          h1 {
-            font-family: 'Lora', sans-serif;
-            font-weight: 400;
-            font-size: 32px;
-            color: #10375C;
-          }
+          &--title {
+            padding-left: 20px;
 
-          p {
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: #9A9A9A;
-            padding: 5px 0;
+            h1 {
+              font-family: 'Lora', sans-serif;
+              font-weight: 400;
+              font-size: 32px;
+              color: #10375C;
+            }
+
+            p {
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              color: #9A9A9A;
+              padding: 5px 0;
+            }
           }
         }
       }
+
     }
 
     &--right {
@@ -555,6 +580,7 @@ a {
     #fife:checked ~ .four {
       display: none;
     }
+
     #oll:checked ~ .two,
     #oll:checked ~ .three,
     #oll:checked ~ .four,
@@ -803,6 +829,7 @@ a {
       background: #FFFFFF;
       box-shadow: 5px 5px 5px 5px rgb(180, 178, 178);
       transition: .4s;
+
       h2 {
         font-family: 'Lora', sans-serif;
         font-weight: 400;
@@ -832,6 +859,7 @@ a {
         justify-content: center;
         transition: all .4s ease;
         cursor: pointer;
+
         a {
           color: #FFFFFF;
         }
@@ -892,55 +920,58 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 50px 0;
 
-    &__block {
-      width: 310px;
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 730px;
       height: 320px;
       background: #FFFFFF;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 0 30px;
       box-shadow: 5px 5px 5px 5px rgb(215, 214, 214);
 
-      h2 {
-        font-family: 'Lora', sans-serif;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 41px;
-        color: #222831;
-      }
+      &--block {
+        padding-right: 40px;
 
-      p {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #9A9A9A;
-        padding: 20px 0;
-      }
+        h2 {
+          font-family: 'Lora', sans-serif;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 41px;
+          color: #222831;
+        }
 
-      &--image {
-        display: flex;
-        align-items: center;
+        p {
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: #9A9A9A;
+          padding: 20px 0;
+        }
 
-        &__title {
-          padding-left: 20px;
+        &__image {
+          display: flex;
+          align-items: center;
 
-          h1 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 500;
-            font-size: 18px;
-            color: #10375C;
-          }
+          &--title {
+            padding-left: 20px;
 
-          span {
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: #9A9A9A;
+            h1 {
+              font-family: 'Lato', sans-serif;
+              font-weight: 500;
+              font-size: 18px;
+              color: #10375C;
+            }
+
+            span {
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              color: #9A9A9A;
+            }
           }
         }
       }
@@ -1031,6 +1062,7 @@ a {
         background: #FF5722;
         margin-top: 30px;
         transition: .4s;
+        cursor: pointer;
 
         &:hover {
           transform: scale(1.1);
@@ -1061,11 +1093,11 @@ a {
 
 #footer {
   background: #0D2C4A;
-  padding: 50px 0;
+  padding: 90px 0;
 
   .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &--title {
       h1 {
@@ -1086,13 +1118,12 @@ a {
       }
 
       &__icon {
-        color: #FFFFFF;
-        font-size: 20px;
         padding-top: 20px;
-        margin-left: -30px;
 
         a {
-          padding-left: 30px;
+          color: #FFFFFF;
+          font-size: 20px;
+          padding-right: 20px;
         }
       }
     }
@@ -1119,6 +1150,16 @@ a {
           font-size: 16px;
           line-height: 26px;
           color: #FFFFFF;
+          padding: 5px 0;
+        }
+
+        a {
+          font-family: 'Lato', sans-serif;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px;
+          color: #FFFFFF;
+          display: flex;
           padding: 5px 0;
         }
       }

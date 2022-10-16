@@ -25,8 +25,8 @@
   display: flex;
   align-items: center;
   position: fixed;
-  top: 12px;
-  right: 20px;
+  top: 20px;
+  right: 40px;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -69,6 +69,26 @@
   box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
 }
+.menu__box--btn {
+  padding: 10px 25px;
+}
+.menu__box--btn button {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FF5722;
+  width: 90px;
+  height: 35px;
+  border: none;
+  transition: 0.2s;
+  margin-right: 10px;
+}
+.menu__box--btn button:hover {
+  transform: scale(1.1);
+  color: white;
+  background: #FF5722;
+  box-shadow: 0 4px 16px rgba(255, 87, 34, 0.32);
+}
 
 .menu__item {
   display: block;
@@ -83,6 +103,7 @@
 
 .menu__item:hover {
   background-color: #CFD8DC;
+  color: #0D2C4A;
 }
 
 * {
@@ -100,7 +121,11 @@ a {
 }
 
 #header {
-  padding: 10px 0;
+  padding: 20px 0;
+  background: rgba(239, 236, 236, 0.53);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   animation: ani 0.6s alternate;
 }
 @keyframes ani {
@@ -155,7 +180,7 @@ a {
 }
 
 #hero {
-  padding: 50px 0;
+  padding-top: 130px;
 }
 #hero .hero--general {
   display: flex;
@@ -284,6 +309,9 @@ a {
   left: 320px;
 }
 
+#space {
+  padding: 60px 0;
+}
 #space .space--title {
   padding: 50px 0;
   display: flex;
@@ -313,12 +341,23 @@ a {
   display: flex;
   justify-content: space-between;
 }
-#space .space--general .image {
+#space .space--general .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#space .space--general .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 340px;
+  height: 470px;
+}
+#space .space--general .swiper-slide .image {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-#space .space--general .image button {
+#space .space--general .swiper-slide .image button {
   position: absolute;
   bottom: 63px;
   width: 72px;
@@ -328,7 +367,7 @@ a {
   background: #FF5722;
   border: none;
 }
-#space .space--general .image h2 {
+#space .space--general .swiper-slide .image h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -336,19 +375,19 @@ a {
   color: #222831;
   padding: 20px 0;
 }
-#space .space--general .block {
+#space .space--general .swiper-slide .block {
   width: 340px;
   height: 470px;
   background: #10375C;
   display: flex;
   flex-direction: column;
 }
-#space .space--general .block img {
+#space .space--general .swiper-slide .block img {
   width: 100px;
   padding: 15px 225px;
   margin-bottom: 30px;
 }
-#space .space--general .block h1 {
+#space .space--general .swiper-slide .block h1 {
   font-family: "Lora", sans-serif;
   font-weight: 400;
   font-size: 32px;
@@ -356,7 +395,7 @@ a {
   text-align: center;
   padding: 15px 0;
 }
-#space .space--general .block span {
+#space .space--general .swiper-slide .block span {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -364,7 +403,7 @@ a {
   text-align: center;
   color: #FFFFFF;
 }
-#space .space--general .block button {
+#space .space--general .swiper-slide .block button {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -384,23 +423,26 @@ a {
   display: flex;
   justify-content: space-between;
 }
-#revolut .revolut--group1 {
-  padding-left: 20px;
+#revolut .revolut--left {
+  display: flex;
 }
-#revolut .revolut--group1 .icon {
+#revolut .revolut--left__group1 {
+  padding: 0 60px;
+}
+#revolut .revolut--left__group1 .icon {
   display: flex;
   padding: 40px 0;
 }
-#revolut .revolut--group1 .icon--title {
+#revolut .revolut--left__group1 .icon--title {
   padding-left: 20px;
 }
-#revolut .revolut--group1 .icon--title h1 {
+#revolut .revolut--left__group1 .icon--title h1 {
   font-family: "Lora", sans-serif;
   font-weight: 400;
   font-size: 32px;
   color: #10375C;
 }
-#revolut .revolut--group1 .icon--title p {
+#revolut .revolut--left__group1 .icon--title p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -844,27 +886,29 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 50px 0;
 }
-#news .news--general__block {
-  width: 310px;
+#news .news--general__img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 730px;
   height: 320px;
   background: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 30px;
   box-shadow: 5px 5px 5px 5px rgb(215, 214, 214);
 }
-#news .news--general__block h2 {
+#news .news--general__img--block {
+  padding-right: 40px;
+}
+#news .news--general__img--block h2 {
   font-family: "Lora", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 41px;
   color: #222831;
 }
-#news .news--general__block p {
+#news .news--general__img--block p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -872,20 +916,20 @@ a {
   color: #9A9A9A;
   padding: 20px 0;
 }
-#news .news--general__block--image {
+#news .news--general__img--block__image {
   display: flex;
   align-items: center;
 }
-#news .news--general__block--image__title {
+#news .news--general__img--block__image--title {
   padding-left: 20px;
 }
-#news .news--general__block--image__title h1 {
+#news .news--general__img--block__image--title h1 {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #10375C;
 }
-#news .news--general__block--image__title span {
+#news .news--general__img--block__image--title span {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -966,6 +1010,7 @@ a {
   background: #FF5722;
   margin-top: 30px;
   transition: 0.4s;
+  cursor: pointer;
 }
 #ready .ready--left button:hover {
   transform: scale(1.1);
@@ -989,11 +1034,11 @@ a {
 
 #footer {
   background: #0D2C4A;
-  padding: 50px 0;
+  padding: 90px 0;
 }
 #footer .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #footer .footer--title h1 {
   font-family: "Lora", serif;
@@ -1011,13 +1056,12 @@ a {
   padding-top: 16px;
 }
 #footer .footer--title__icon {
-  color: #FFFFFF;
-  font-size: 20px;
   padding-top: 20px;
-  margin-left: -30px;
 }
 #footer .footer--title__icon a {
-  padding-left: 30px;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-right: 20px;
 }
 #footer .footer--general {
   display: flex;
@@ -1040,6 +1084,15 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+  padding: 5px 0;
+}
+#footer .footer--general__group a {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  display: flex;
   padding: 5px 0;
 }
 
